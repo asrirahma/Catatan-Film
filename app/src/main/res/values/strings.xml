@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">CatatanFilm</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Abimana Aryasatya</string>
+    <string name="nav_header_subtitle">abimana@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_bookmark">Saved</string>
+    <string name="menu_language">Language</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_saved">Home</string>
+    <string name="menu_profil">Profile</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+
+    <string name="nama_profil">Name</string>
+    <string name="username">Abimana Aryasatya</string>
+    <string name="useremail">abimana@gmail.com</string>
+    <string name="email_profil">Email</string>
+
+    <string name="recommended_movies">For you
+to recommend a week’s
+top movies</string>
+    <string name="button_new">NEW</string>
+    <string name="button_popular">POPULAR</string>
+    <string name="button_upcoming">UPCOMING</string>
+
+    <string name="tittle_badboys">Badboys 3</string>
+    <string name="tittle_bloodshot">Bloodshot</string>
+    <string name="tittle_jumanji">Jumanji</string>
+    <string name="tittle_sonicthehedgehog">Sonic The Hedgehog</string>
+    <string name="tittle_hitandrun">Hit and Run</string>
+    <string name="tittle_birdsofprey">Birds of Prey</string>
+    <string name="tittle_charliesangels">Charlies Angels</string>
+    <string name="tittle_thesleepover">The Sleepover</string>
+
+    <string name="tittle">Tittle</string>
+    <string name="genre">Genre</string>
+
+
+<!--    <string-array name="data_name">-->
+<!--        <item>Badboys 3</item>-->
+<!--        <item>Bloodshot</item>-->
+<!--        <item>Jumanji</item>-->
+<!--        <item>Sonic The Hedgehog</item>-->
+<!--        <item>Hit and Run</item>-->
+<!--        <item>Birds of Prey</item>-->
+<!--        <item>Charlie's Angels</item>-->
+<!--        <item>The Sleepover</item>-->
+<!--    </string-array>-->
+
+    <string-array name="data_genre">
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+        <item>Action, Comedy</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>@drawable/film_badboys</item>
+        <item>@drawable/film_bloodshot</item>
+        <item>@drawable/film_jumanji</item>
+        <item>@drawable/film_sonicthehedgehog</item>
+        <item>@drawable/film_hitandrun</item>
+        <item>@drawable/film_birdsofprey</item>
+        <item>@drawable/film_charliesangels</item>
+        <item>@drawable/film_thesleepover</item>
+    </string-array>
+
+
+</resources>

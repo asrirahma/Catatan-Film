@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C1A18</color>
+    <color name="colorPrimaryDark">#1C1A18</color>
+    <color name="colorAccent">#655B50</color>
+    <color name="colorTextSatu">#FFE2C7</color>
+    <color name="colorTextDua">#FFBA00</color>
+    <color name="colorBackgoundButton">#39342E</color>
+    <color name="white">#fff</color>
+    <color name="gray">#a9a9a9</color>
+    <color name="black_text">#000</color>
+</resources>

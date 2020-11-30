@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/text_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginRight="68dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:lineHeight="35dp"
+            android:text="@string/recommended_movies"
+            android:textColor="@color/colorTextSatu"
+            android:textSize="27dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recomended_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_recommend"
+            tools:ignore="RtlSymmetry"
+            tools:listitem="@layout/item_card_horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Popular Movie"
+            android:textColor="@color/colorTextSatu"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recomended_rv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/popular_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:listitem="@layout/item_list_vertical" />
+        <!--        <ScrollView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/text_recommend"-->
+        <!--            android:fillViewport="false">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:orientation="horizontal"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginLeft="25dp"-->
+        <!--                app:layout_constraintTop_toBottomOf="@id/text_recommend">-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="290dp"-->
+        <!--                    android:layout_height="170dp"-->
+        <!--                    android:src="@drawable/film_badboys" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="280dp"-->
+        <!--                    android:layout_height="170dp"-->
+        <!--                    android:src="@drawable/film_nkcthi"-->
+        <!--                    android:layout_marginLeft="10dp" />-->
+
+        <!--                <ImageView-->
+        <!--                    android:layout_width="280dp"-->
+        <!--                    android:layout_height="170dp"-->
+        <!--                    android:src="@drawable/film_deadpool"-->
+        <!--                    android:layout_marginLeft="10dp" />-->
+
+        <!--            </LinearLayout>-->
+        <!--        </ScrollView>-->
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginLeft="25dp"-->
+        <!--        android:layout_marginRight="25dp"-->
+        <!--    </LinearLayout>-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/button_new"-->
+        <!--        android:layout_width="80dp"-->
+        <!--        android:layout_height="40dp"-->
+        <!--        android:backgroundTint="@color/colorTextSatu"-->
+        <!--        android:text="@string/button_new"-->
+        <!--        android:textColor="@color/colorPrimary"-->
+        <!--        android:textSize="13sp"-->
+        <!--        android:background="@drawable/corner"-->
+        <!--        tools:ignore="MissingConstraints"-->
+        <!--        tools:layout_editor_absoluteX="25dp"-->
+        <!--        tools:layout_editor_absoluteY="390dp" />-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/button_popular"-->
+        <!--        android:layout_width="120dp"-->
+        <!--        android:layout_height="40dp"-->
+        <!--        android:backgroundTint="@color/colorBackgoundButton"-->
+        <!--        android:text="@string/button_popular"-->
+        <!--        android:textColor="@color/colorTextSatu"-->
+        <!--        android:textSize="13sp"-->
+        <!--        android:background="@drawable/corner"-->
+        <!--        tools:ignore="MissingConstraints"-->
+        <!--        tools:layout_editor_absoluteX="120dp"-->
+        <!--        tools:layout_editor_absoluteY="390dp" />-->
+
+        <!--    <Button-->
+        <!--        android:id="@+id/button_upcoming"-->
+        <!--        android:layout_width="130dp"-->
+        <!--        android:layout_height="40dp"-->
+        <!--        android:backgroundTint="@color/colorBackgoundButton"-->
+        <!--        android:text="@string/button_upcoming"-->
+        <!--        android:textColor="@color/colorTextSatu"-->
+        <!--        android:textSize="13sp"-->
+        <!--        android:background="@drawable/corner"-->
+        <!--        tools:ignore="MissingConstraints"-->
+        <!--        tools:layout_editor_absoluteX="255dp"-->
+        <!--        tools:layout_editor_absoluteY="390dp" />-->
+
+
+        <!--    <androidx.cardview.widget.CardView-->
+        <!--        android:layout_width="1000dp"-->
+        <!--        android:layout_height="160dp"-->
+        <!--        android:layout_margin="10dp"-->
+        <!--        android:elevation="10dp"-->
+        <!--        android:orientation="vertical"-->
+        <!--        app:cardCornerRadius="20dp"-->
+        <!--        app:layout_constraintStart_toStartOf="@id/text_recommend"-->
+        <!--        app:layout_constraintTop_toBottomOf="@id/text_recommend">-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="280dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/film_badboys"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:scaleType="centerCrop"/>-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="280dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:src="@drawable/film_nkcthi"-->
+        <!--            android:background="@color/colorPrimary"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:layout_marginLeft="300dp" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
