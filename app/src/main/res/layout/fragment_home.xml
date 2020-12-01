@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="68dp"
             android:fontFamily="@font/poppins_semibold"
             android:lineHeight="35dp"
